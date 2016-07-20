@@ -1,0 +1,15 @@
+com\niit\furniture\dao\ProductDAO.class
+com\niit\furniture\dao\ProductDAOImpl.class
+com\niit\furniture\dao\CategoryDAOImpl.class
+com\niit\App.class
+com\niit\furniture\model\Product.class
+com\niit\furniture\config\ApplicationContextConfig.class
+com\niit\furniture\dao\SupplierDAOImpl.class
+com\niit\furniture\dao\UserDAO.class
+com\niit\furniture\model\Supplier.class
+com\niit\furniture\model\User.class
+com\niit\furniture\dao\UserDAOImpl.class
+com\niit\furniture\model\UserDetails.class
+com\niit\furniture\dao\CategoryDAO.class
+com\niit\furniture\dao\SupplierDAO.class
+com\niit\furniture\model\Category.class
