@@ -56,7 +56,7 @@ background-color:black;
 
 </head>
 
-<body style="background-image:url(http://e9solutions.com/wp-content/uploads/2015/08/hd-contact-us-banner.jpg)">
+<body style="background-image:url(http://www.hunter.cuny.edu/ieli/repository/images/contact%20us%20pad.jpg; width:100%')">
 
 
 
@@ -81,9 +81,9 @@ background-color:black;
     
    <ul class="nav navbar-nav navbar-right">
          
-        <li ><a href="SignUpPage"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li ><a href="LoginPage"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-        <li><a href="CartPage"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+        <li ><a href="Signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li ><a href="login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="cart"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
          <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Your Products<span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -91,7 +91,7 @@ background-color:black;
             <li><a href="#">Your Orders</a></li>
             <li><a href="#">Your Wish list</a></li>
             <li><a href="#">Your SaveItems</a></li>
-            <li><a href="LoginPage">Log Out</a></li>
+            <li><a href="login">Log Out</a></li>
           </ul>
         </li>
       </ul>
@@ -99,8 +99,8 @@ background-color:black;
 
     
       <ul class="nav navbar-nav navbar-left">
-        <li><a href="HomePage"><span class="glyphicon glyphicon-home"></span></a></li>
-         <li><a href="AboutUsPage">About Us</a> </li>
+        <li><a href="home"><span class="glyphicon glyphicon-home"></span></a></li>
+         <li><a href="aboutus">About Us</a> </li>
         <li class= "active"><a href="#"><span class="glyphicon glyphicon-phone-alt"></span>Contact Us</a></li>
       </ul>
       
@@ -125,7 +125,7 @@ background-color:black;
 	<div id="wrapper">
 		
 		<div id="contact" class="animate form">
-			<form method="post" action="vijayasreek28@gmail.com" autocomplete="on"> 
+			<form method="post" action="saveOrUpdate" autocomplete="on"> 
 
 				<p> 
 					<label for="username" class="uname" data-icon="u">Name:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </label>
@@ -157,7 +157,16 @@ background-color:black;
 </div>
 </div>
 </div>
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <div id="footer">
  <p style="font-family:serif;font-size=30px;color:white;text-align: center"><span class="glyphicon glyphicon-copyright-mark"></span>
  2016 Furniture.com | India.</p>

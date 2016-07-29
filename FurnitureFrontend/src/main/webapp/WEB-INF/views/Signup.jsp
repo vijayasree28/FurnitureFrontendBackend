@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
    pageEncoding="ISO-8859-1"%>
+   <%@include file="header.jsp" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -60,10 +61,10 @@ background-color:black;
 
 
 
-<div id="header">
+<!--<div id="header">
 <div class="font-effect-shadow-multiple">
 <h1>Furniture.com</h1><span style="font-size:22px;color:white;text-align:right;">Furniture offers a better way to shop for furniture</span></div>
-</div>
+</div>-->
 
 <div id="tabs">
 
@@ -82,8 +83,8 @@ background-color:black;
    <ul class="nav navbar-nav navbar-right">
          
         <li class= "active"><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li ><a href="LoginPage"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-        <li><a href="CartPage"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+        <li ><a href="login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+       <!-- <li><a href="cart"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
          <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Your Products<span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -91,18 +92,18 @@ background-color:black;
             <li><a href="#">Your Orders</a></li>
             <li><a href="#">Your Wish list</a></li>
             <li><a href="#">Your SaveItems</a></li>
-          <li><a href="LoginPage">Log Out</a></li>
-          </ul>
+          <li><a href="login">Log Out</a></li>
+          </ul>-->
         </li>
       </ul>
 
 
     
-      <ul class="nav navbar-nav navbar-left">
-        <li><a href="HomePage"><span class="glyphicon glyphicon-home"></span></a></li>
-         <li><a href="AboutUsPage">About Us</a> </li>
-        <li><a href="ContactUsPage"><span class="glyphicon glyphicon-phone-alt"></span>Contact Us</a></li>
-      </ul>
+    <ul class="nav navbar-nav navbar-left">
+        <li><a href="guesthome"><span class="glyphicon glyphicon-home"></span>Home</a></li>
+         <!--  <li><a href="aboutus">About Us</a> </li>
+        <li><a href="contactus"><span class="glyphicon glyphicon-phone-alt"></span>Contact Us</a></li>
+      </ul>-->
       
     </div>
   </div>
@@ -126,31 +127,44 @@ background-color:black;
 	<div id="wrapper">
 		
 		<div id="register" class="animate form">
-			<form  action="login" autocomplete="on"> 
+			<form method="POST" action="saveOrUpdate" autocomplete="on"> 
 
-				<p> 
-					<label for="usernamesignup" class="uname" data-icon="u">Your username:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;   </label>
-					<input id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder="myusername28" />
-				</p>
-				<p> 
-					<label for="emailsignup" class="youmail" data-icon="e" > Your emailid:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </label>
-					<input id="emailsignup" name="emailsignup" required="required" type="email" placeholder="myemail@mail.com"/> 
-				</p>
-				<p> 
-					<label for="passwordsignup" class="youpasswd" data-icon="p">Your password:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </label>
-					<input id="passwordsignup" name="passwordsignup" required="required" type="password" placeholder="eg. V2ij@80S"/>
-				</p>
-				<p> 
-					<label for="passwordsignup_confirm" class="youpasswd" data-icon="p">Confirm your password:</label>
-					<input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" placeholder="eg. V2ij@80S"/>
-				</p>
-				<p class="signup button"> 
-					<input type="submit" value="Sign up"/> 
-				</p>
-				<p class="change_link"><strong>Already a member ?</strong>  
-					
-					<a href="LoginPage" class="to_register"> <strong>Go to log in</strong> </a>
-				</p>
+<p> 
+<label for="fullnamesignup" class="fname" data-icon="u">Your Fullname:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </label>
+<input id="fullnamesignup" name="fullnamesignup" required="required" type="text" placeholder="name" />
+</p>
+
+<p> 
+<label for="addsignup" class="address" data-icon="u">Your Address:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;&nbsp;   </label>
+<input id="addsignup" name="addsignup" required="required" type="text" placeholder="address" />
+</p>
+
+<p> 
+<label for="usernamesignup" class="uname" data-icon="u">Your Username:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   </label>
+<input id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder="myusername28" />
+</p>
+
+<p> 
+<label for="emailsignup" class="youmail" data-icon="e" > Your Emailid:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  </label>
+<input id="emailsignup" name="emailsignup" required="required" type="email" placeholder="myemail@mail.com"/> 
+</p>
+
+<p> 
+<label for="passwordsignup" class="youpasswd" data-icon="p">Your Password:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </label>
+<input id="passwordsignup" name="passwordsignup" required="required" type="password" placeholder="eg. 123456"/>
+</p>
+
+<p> 
+<label for="passwordsignup_confirm" class="youpasswd" data-icon="p">Confirm your password:</label>
+<input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" placeholder="eg. 123456"/>
+</p>
+
+<p class="signup button"> 
+<input type="submit" value="Sign up"/> 
+</p>
+<p class="change_link"><strong>Already a member ?</strong>  
+<a href="login" class="to_register"> <strong>Go to log in</strong> </a>
+</p>
 			</form>
 		
 		</div>
@@ -161,11 +175,10 @@ background-color:black;
 </div>
 </div>
 </div>
-<div id="footer">
+<!--<div id="footer">
  <p style="font-family:serif;font-size=30px;color:white;text-align: center"><span class="glyphicon glyphicon-copyright-mark"></span>
  2016 Furniture.com | India.</p>
- 
-</div>
-
+ </div>-->
+<%@include file="footer.jsp" %>
 </body>
 </html>

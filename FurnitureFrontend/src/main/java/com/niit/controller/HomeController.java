@@ -7,11 +7,11 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class HomeController 
 {
-@RequestMapping("/")
+/*@RequestMapping("/")
 public ModelAndView showHomePage()
 {
 	ModelAndView mv=new ModelAndView("home");
 	return mv;
-}
+}*/
 
 }

@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
    pageEncoding="ISO-8859-1"%>
+    <%@include file="header.jsp" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -60,10 +61,10 @@ background-color:black;
 
 
 
-<div id="header">
+<!--<div id="header">
 <div class="font-effect-shadow-multiple">
 <h1>Furniture.com</h1><span style="font-size:22px;color:white;text-align:right;">Furniture offers a better way to shop for furniture</span></div>
-</div>
+</div>-->
 
 <div id="tabs">
 
@@ -81,9 +82,9 @@ background-color:black;
     
    <ul class="nav navbar-nav navbar-right">
          
-        <li ><a href="SignUpPage"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li ><a href="LoginPage"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-        <li><a href="CartPage"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+        <li ><a href="Signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li ><a href="login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="cart"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
          <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Your Products<span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -91,7 +92,7 @@ background-color:black;
             <li><a href="#">Your Orders</a></li>
             <li><a href="#">Your Wish list</a></li>
             <li><a href="#">Your SaveItems</a></li>
-            <li><a href="LoginPage">Log Out</a></li>
+            <li><a href="login">Log Out</a></li>
           </ul>
         </li>
       </ul>
@@ -99,9 +100,9 @@ background-color:black;
 
     
       <ul class="nav navbar-nav navbar-left">
-        <li><a href="HomePage"><span class="glyphicon glyphicon-home"></span></a></li>
+        <li><a href="home"><span class="glyphicon glyphicon-home"></span>Home</a></li>
          <li class= "active"><a href="#">About Us</a> </li>
-        <li><a href="ContactUsPage"><span class="glyphicon glyphicon-phone-alt"></span>Contact Us</a></li>
+        <li><a href="contactus"><span class="glyphicon glyphicon-phone-alt"></span>Contact Us</a></li>
       </ul>
       
     </div>
@@ -136,13 +137,21 @@ including metal, plastic, and wood. Furniture can be made using a variety of woo
 </tr>
 </table>
 </div>
-     
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
-        
-        <div id="footer">
+
+ <%@include file="footer.jsp" %>
+
+           <!--  <div id="footer">
  <p style="font-family:serif;font-size=30px;color:white;text-align: center"><span class="glyphicon glyphicon-copyright-mark"></span>
  2016 Furniture.com | India.</p>
  
-</div>
+</div> -->
 </body>
 </html>

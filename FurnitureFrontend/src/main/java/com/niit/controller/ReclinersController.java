@@ -8,36 +8,36 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class ReclinersController {
 @Autowired
-@RequestMapping("/Recliner1")
+@RequestMapping("/recliner1")
 
-public ModelAndView showRecliner1Page()
+public ModelAndView showrecliner1()
 {
 	System.out.println("in controller");
 			
 		return new ModelAndView("recliner1");
 	
 }
-@RequestMapping("/Recliner2")
+@RequestMapping("/recliner2")
 
-public ModelAndView showRecliner2Page()
+public ModelAndView showrecliner2()
 {
 	System.out.println("in controller");
 			
 		return new ModelAndView("recliner2");
 	
 }
-@RequestMapping("/Recliner3")
+@RequestMapping("/recliner3")
 
-public ModelAndView showRecliner3Page()
+public ModelAndView showrecliner3()
 {
 	System.out.println("in controller");
 			
 		return new ModelAndView("recliner3");
 	
 }
-@RequestMapping("/Recliner4")
+@RequestMapping("/recliner4")
 
-public ModelAndView showRecliner4Page()
+public ModelAndView showrecliner4()
 {
 	System.out.println("in controller");
 			

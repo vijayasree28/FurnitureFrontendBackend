@@ -8,36 +8,36 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class GlasstableController {
 	@Autowired
-	@RequestMapping("/GlassTable1")
+	@RequestMapping("/glasstable1")
 
-	public ModelAndView showGlassTable1Page()
+	public ModelAndView showglasstable1()
 	{
 		System.out.println("in controller");
 				
 			return new ModelAndView("glasstable1");
 		
 	}
-	@RequestMapping("/GlassTable2")
+	@RequestMapping("/glasstable2")
 
-	public ModelAndView showGlassTable2Page()
+	public ModelAndView showglasstable2()
 	{
 		System.out.println("in controller");
 				
 			return new ModelAndView("glasstable2");
 		
 	}
-	@RequestMapping("/GlassTable3")
+	@RequestMapping("/glasstable3")
 
-	public ModelAndView showGlassTable3Page()
+	public ModelAndView showglasstable3()
 	{
 		System.out.println("in controller");
 				
 			return new ModelAndView("glasstable3");
 		
 	}
-	@RequestMapping("/GlassTable4")
+	@RequestMapping("/glasstable4")
 
-	public ModelAndView showGlassTable4Page()
+	public ModelAndView showglasstable4()
 	{
 		System.out.println("in controller");
 				

@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
    pageEncoding="ISO-8859-1"%>
+    <%@include file="header.jsp" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -116,7 +117,7 @@ background-color: white;
 }
 
 #tabs{
-    width:1170px;
+    width:1350px;
     float:left;
     padding:10px;
 }
@@ -130,7 +131,7 @@ background-color:whitesmoke;
 }
 
 #footer{
-background-color:black;
+background-color:brown;
     
     clear:both;
    
@@ -144,11 +145,11 @@ background-color:black;
 
 <body style="background-image:url(http://previews.123rf.com/images/klavapuk/klavapuk1203/klavapuk120300006/12858322-Seamless-furniture-background-Stock-Vector-furniture-design.jpg)">
 
-<div id="header">
+<!--  <div id="header">
 <div class="font-effect-shadow-multiple">
 <h1>Furniture.com</h1><span style="font-size:22px;color:white;text-align:right;">Furniture offers a better way to shop for furniture</span></div>
-</div>
-
+</div>-->
+<h3><center>Welcome To Admin Home</center>
 <div id="tabs">
 
 <nav class="navbar navbar-inverse">
@@ -166,17 +167,12 @@ background-color:black;
    <ul class="nav navbar-nav navbar-right">
  
         
-        <li ><a href="HomePage">Log Out<span class="glyphicon glyphicon-log-out"></span></a></li>
+        <li><a href="guesthome">Log Out<span class="glyphicon glyphicon-log-out"></span></a></li>
         
           </ul>
         
-      
-      
-
-
-    
-      <ul class="nav navbar-nav navbar-left">
-        <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span>Home</a></li></ul>
+        <ul class="nav navbar-nav navbar-left">
+        <li><a href="home"><span class="glyphicon glyphicon-home"></span>Home</a></li></ul>
        
     </div>
   </div>
@@ -253,19 +249,22 @@ background-color:black;
 </div>
 <br>
 
-<h2 style="font-family:'Luckiest Guy',cursive ;font-size: 64px;text-align:center">Available Furniture:</h3><br>
+<!-- <h2 style="font-family:'Luckiest Guy',cursive ;font-size: 64px;text-align:center">Available Furniture:</h3><br>-->
 <br>
 <br>
 
-<div class="dropdown">
- <button class="button">Categories</button>
-<div class="dropdown-content">
-    <a href="getAllCategories"></a>
+<div class="wrapper text-center">
+ <a href="categoryList"><button class="button">Categories</button></a>
+<a href="supplierList"><button class="button">Suppliers</button></a>
+   <a href="productList"><button class="button">Products</button> </a>
+   
+   
+<!-- <div class="dropdown-content">
 <a href="#">Loungersofas</a>
 <a href="#">Woodensofas</a>
     <a href="#">DiningTable</a>
  <a href="#">CoffeeTable</a>
- <a href="#">SingleSeaters</a>
+ <a href="#">SingleSeaters</a> 
   
     
   </div>
@@ -273,23 +272,26 @@ background-color:black;
 
 <div class="dropdown">
   <button class="button">Suppliers</button>
-  <div class="dropdown-content">
-    <a href="getAllSuppliers"></a>
-    <a href="#">Videms</a>
+  
+   <a href="supplierList"></a>
+     <div class="dropdown-content">
+     <a href="#">Videms</a>
     <a href="#">Adithya</a>
- <a href="#">YesMart</a>
+ <a href="#">Relaince Market</a>
  <a href="#">ComeShowroom</a>
   </div>
 </div>
 
 <div class="dropdown">
   <button class="button">Products</button>
-  <div class="dropdown-content">
-    <a href="getAllProducts"> </a>
-    <a href="#">Sofas</a>
+  <a href="productList"> </a>
+       <div class="dropdown-content">
+       <a href="#">Sofas</a>
     <a href="#">DiningTables</a>
  <a href="#">GlassTables</a>
- <a href="#">Recliners</a>
+ <a href="#">Recliners</a>-->
+ 
+ 
   </div>
 </div>
  <br>
@@ -307,11 +309,11 @@ background-color:black;
 <br>
 <br>
 
-
-  <div id="footer">
+ <%@include file="footer.jsp" %>
+  <!--<div id="footer">
  <p style="font-family:serif;font-size=30px;color:white;text-align: center"><span class="glyphicon glyphicon-copyright-mark"></span>
  2016 Furniture.com | India.</p>
-</div>
+</div>-->
 
 
 </body>

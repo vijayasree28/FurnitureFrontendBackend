@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
    pageEncoding="ISO-8859-1"%>
+    <%@include file="header.jsp" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -42,7 +43,7 @@ width:360px;
 
 
 #tabs{
-    width:1170px;
+    width:1350px;
     float:left;
     padding:10px;
 }
@@ -70,10 +71,10 @@ background-color:black;
 
 <body style="background-image:url(http://previews.123rf.com/images/klavapuk/klavapuk1203/klavapuk120300006/12858322-Seamless-furniture-background-Stock-Vector-furniture-design.jpg)">
 
-<div id="header">
+<!--<div id="header">
 <div class="font-effect-shadow-multiple">
 <h1>Furniture.com</h1><span style="font-size:22px;color:white;text-align:right;">Furniture offers a better way to shop for furniture</span></div>
-</div>
+</div>-->
 
 <div id="tabs">
 
@@ -91,9 +92,9 @@ background-color:black;
     
    <ul class="nav navbar-nav navbar-right">
          
-        <li ><a href="SignUpPage"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li ><a href="LoginPage"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-        <li><a href="CartPage"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+        <li ><a href="Signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li ><a href="login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="cart"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
          <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Your Products<span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -101,17 +102,17 @@ background-color:black;
             <li><a href="#">Your Orders</a></li>
             <li><a href="#">Your Wishlist</a></li>
             <li><a href="#">Your SaveItems</a></li>
-            <li><a href="LoginPage">Log Out</a></li>
+            <li><a href="login">Log Out</a></li>
           </ul>
         </li>
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Categories<span class="caret"></span></a>
           <ul class="dropdown-menu">
        
-<li><a href="SofaPage" style="color:black" >Sofas</a></li>
-<li><a href="DiningtablePage" style="color:black">Dining Table</a></li>
-<li><a href="GlasstablePage" style="color:black">Glass Table</a></li>
-<li><a href="ReclinersPage" style="color:black">Recliners</a></li>
+<li><a href="Sofa" style="color:black" >Sofas</a></li>
+<li><a href="Diningtable" style="color:black">Dining Table</a></li>
+<li><a href="Glasstable" style="color:black">Glass Table</a></li>
+<li><a href="Recliners" style="color:black">Recliners</a></li>
 
 
 
@@ -150,9 +151,10 @@ background-color:black;
 
     
       <ul class="nav navbar-nav navbar-left">
-        <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span>Home</a></li>
-         <li><a href="AboutUsPage">About Us</a></li>
-        <li><a href="ContactUsPage"><span class="glyphicon glyphicon-phone-alt"></span>Contact Us</a></li>
+        <li class="active"><a href="home"><span class="glyphicon glyphicon-home"></span>Home</a></li>
+         <li><a href="aboutus">About Us</a></li>
+        <li><a href="contactus"><span class="glyphicon glyphicon-phone-alt"></span>Contact Us</a></li>
+        <li><a href="Product">View Products</a>
       </ul>
       
     </div>
@@ -230,12 +232,12 @@ background-color:black;
 </div>
 
 
- <div id="footer">
+ <!--<div id="footer">
  <p style="font-family:serif;font-size=30px;color:white;text-align: center"><span class="glyphicon glyphicon-copyright-mark"></span>
  2016 Furniture.com | India.</p>
-</div>
+</div>-->
  
-
+ <%@include file="footer.jsp" %>
 </body>
 
 </html>

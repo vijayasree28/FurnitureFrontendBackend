@@ -9,75 +9,75 @@ import org.springframework.web.servlet.ModelAndView;
 public class IndexController {
 @Autowired
 @RequestMapping("/")
-public ModelAndView showIndexPage()
+public ModelAndView showindex()
 {
 	System.out.println("in controller");
 	return new ModelAndView("index");
 }
-@RequestMapping("/GuestHomePage")
-public ModelAndView showGuestHomePage()
+@RequestMapping("/guesthome")
+public ModelAndView showguesthome()
 {
     System.out.println("in controller");
     return new ModelAndView("guesthome");	
 }
 
-@RequestMapping("/HomePage")
-public ModelAndView showHomePage()
+@RequestMapping("/admin")
+public ModelAndView showadmin()
 {
 	System.out.println("in controller");
-	return new ModelAndView("home");
+	return new ModelAndView("admin");
 }
-@RequestMapping("/AboutUsPage")
-public ModelAndView showAboutUsPage()
+@RequestMapping("/aboutus")
+public ModelAndView showaboutus()
 {
 	System.out.println("in controller");
 	return new ModelAndView("aboutus");
 }
-@RequestMapping("/ContactUsPage")
-public ModelAndView showContactUsPage()
+@RequestMapping("/contactus")
+public ModelAndView showcontactus()
 {
 	System.out.println("in controller");
 	return new ModelAndView("contactus");
 }
-@RequestMapping("/LoginPage")
-public ModelAndView showLoginPage()
+/*@RequestMapping("/login")
+public ModelAndView showlogin()
 {
 	System.out.println("in controller");
 	return new ModelAndView("login");
 }
-@RequestMapping("/SignUpPage")
-public ModelAndView showSignuUpPage()
+@RequestMapping("/Signup")
+public ModelAndView showSignup()
 {
 	System.out.println("in controller");
 	return new ModelAndView("Signup");
-}
-@RequestMapping("/SofaPage")
-public ModelAndView showSofaPage()
+}*/
+@RequestMapping("/Sofa")
+public ModelAndView showSofa()
 {
 	System.out.println("in controller");
 	return new ModelAndView("Sofa");
 }
 
-@RequestMapping("/DiningtablePage")
-public ModelAndView showDiningtablePage()
+@RequestMapping("/Diningtable")
+public ModelAndView showDiningtable()
 {
 	System.out.println("in controller");
 	return new ModelAndView("Diningtable");
 }
-@RequestMapping("/GlasstablePage")
-public ModelAndView showGlasstablePage()
+@RequestMapping("/Glasstable")
+public ModelAndView showGlasstable()
 {
 	System.out.println("in controller");
 	return new ModelAndView("Glasstable");
 }
-@RequestMapping("/ReclinersPage")
-public ModelAndView showReclinersPage()
+@RequestMapping("/Recliners")
+public ModelAndView showRecliners()
 {
 	System.out.println("in controller");
 	return new ModelAndView("Recliners");
 }
-@RequestMapping("/CartPage")
-public ModelAndView showCartPage()
+@RequestMapping("/cart")
+public ModelAndView showcart()
 {
 	System.out.println("in controller");
 	return new ModelAndView("cart");

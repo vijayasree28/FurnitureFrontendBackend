@@ -10,9 +10,9 @@ public class SofasController {
 	@Autowired
 	
 
-	@RequestMapping("/LoungerSofa1")
+	@RequestMapping("/loungersofa1")
 		
-		public ModelAndView showLoungerSofa1Page()
+		public ModelAndView showloungersofa1()
 		{
 			System.out.println("in controller");
 					
@@ -20,9 +20,9 @@ public class SofasController {
 			
 		}
 	
-	@RequestMapping("/LoungerSofa2")
+	@RequestMapping("/loungersofa2")
 	
-	public ModelAndView showLoungerSofa2Page()
+	public ModelAndView showloungersofa2()
 	{
 		System.out.println("in controller");
 				
@@ -30,9 +30,9 @@ public class SofasController {
 		
 	}
 	
-	@RequestMapping("/LoungerSofa3")
+	@RequestMapping("/loungersofa3")
 	
-	public ModelAndView showLoungerSofa3Page()
+	public ModelAndView showloungersofa3()
 	{
 		System.out.println("in controller");
 				
@@ -40,9 +40,9 @@ public class SofasController {
 		
 	}
 	
-	@RequestMapping("/LoungerSofa4")
+	@RequestMapping("/loungersofa4")
 	
-	public ModelAndView showLoungerSofa4Page()
+	public ModelAndView showloungersofa4()
 	{
 		System.out.println("in controller");
 				
@@ -50,9 +50,9 @@ public class SofasController {
 		
 	}
 	
-	@RequestMapping("/WoodenSofa1")
+	@RequestMapping("/woodensofa1")
 	
-	public ModelAndView showWoodenSofa1Page()
+	public ModelAndView showwoodensofa1()
 	{
 		System.out.println("in controller");
 				
@@ -60,9 +60,9 @@ public class SofasController {
 		
 	}
 	
-@RequestMapping("/WoodenSofa2")
+@RequestMapping("/woodensofa2")
 	
-	public ModelAndView showWoodenSofa2Page()
+	public ModelAndView showwoodensofa2()
 	{
 		System.out.println("in controller");
 				
@@ -70,18 +70,18 @@ public class SofasController {
 		
 	}
 
-@RequestMapping("/WoodenSofa3")
+@RequestMapping("/woodensofa3")
 
-public ModelAndView showWoodenSofa3Page()
+public ModelAndView showwoodensofa3()
 {
 	System.out.println("in controller");
 			
 		return new ModelAndView("woodensofa3");
 	
 }
-@RequestMapping("/WoodenSofa4")
+@RequestMapping("/woodensofa4")
 
-public ModelAndView showWoodenSofa4Page()
+public ModelAndView showwoodensofa4()
 {
 	System.out.println("in controller");
 			

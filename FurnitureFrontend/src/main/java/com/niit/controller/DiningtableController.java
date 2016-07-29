@@ -8,36 +8,36 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class DiningtableController {
 @Autowired
-@RequestMapping("/DiningTable1")
+@RequestMapping("/diningtable1")
 
-public ModelAndView showDiningTable1Page()
+public ModelAndView showdiningtable1()
 {
 	System.out.println("in controller");
 			
 		return new ModelAndView("diningtable1");
 	
 }
-@RequestMapping("/DiningTable2")
+@RequestMapping("/diningtable2")
 
-public ModelAndView showDiningTable2Page()
+public ModelAndView showdiningtable2()
 {
 	System.out.println("in controller");
 			
 		return new ModelAndView("diningtable2");
 	
 }
-@RequestMapping("/DiningTable3")
+@RequestMapping("/diningtable3")
 
-public ModelAndView showDiningTable3Page()
+public ModelAndView showdiningtable3()
 {
 	System.out.println("in controller");
 			
 		return new ModelAndView("diningtable3");
 	
 }
-@RequestMapping("/DiningTable4")
+@RequestMapping("/diningtable4")
 
-public ModelAndView showDiningTable4Page()
+public ModelAndView showdiningtable4()
 {
 	System.out.println("in controller");
 			

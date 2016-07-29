@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
    pageEncoding="ISO-8859-1"%>
+   <%@include file="header.jsp" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -43,7 +44,7 @@ width:360px;
 
 
 #tabs{
-    width:1170px;
+    width:1350px;
     float:left;
     padding:10px;
 }
@@ -57,10 +58,8 @@ background-color:whitesmoke;
 }
 
 #footer{
-background-color:black;
-    
+background-color:black; 
     clear:both;
-   
     padding:5px;
     }
 }
@@ -71,10 +70,10 @@ background-color:black;
 
 <body style="background-image:url(http://previews.123rf.com/images/klavapuk/klavapuk1203/klavapuk120300006/12858322-Seamless-furniture-background-Stock-Vector-furniture-design.jpg)">
 
-<div id="header">
+<!--<div id="header">
 <div class="font-effect-shadow-multiple">
 <h1>Furniture.com</h1><span style="font-size:22px;color:white;text-align:right;">Furniture offers a better way to shop for furniture</span></div>
-</div>
+</div>-->
 
 <div id="tabs">
 
@@ -92,8 +91,8 @@ background-color:black;
     
    <ul class="nav navbar-nav navbar-right">
  
-        <li ><a href="SignUpPage"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li ><a href="LoginPage"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li ><a href="Signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li ><a href="login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
         
           </ul>
         
@@ -181,24 +180,68 @@ background-color:black;
 <br>
 <br>
 <br>
-<div class="container">
-<h3 style="font-family:'Nunito', sans-serif;">We are accepting suggessions,opinions and comments for Furniture.com.</h3>
-      <p style="font-family:'Nunito', sans-serif;font-size:24px"> To Follow Us</p>
-<button type="button" class="btn btn-info">facebook</button>
-<p style="font-family:'Nunito', sans-serif;font-size:24px"> To Contact Us</p>
-        <p style="font-family: Acme;font-size:20px"> Send Us a Mail - email id: funiture@gmail.com</p>
-        <p style="font-family: Acme;font-size:20px"> Give Us a Call - 040-24202028</p>
-       
-      
-</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 
- <div id="footer">
+
+<footer>
+<nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 footer-fw-box-container">
+          <div class="footer-fw-box">
+            <h3 class="heading">About Furniture.com</h3>
+            <p>Furniture is a name that is synonymous with high quality furniture for several decades.  Furniture.com has stores in Hyderabad.  Furniture world boasts of an impressive collection of ethnic and contemporary designs and an exemplary service standards that brings our customers back.</p>
+            <!-- a href="#" class="big-link">Read More <span class="glyphicon glyphicon-chevron-right"></span></a -->
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="footer-store-locator-box">
+            <span class="small-heading">Find a store near you</span>
+            <h3 class="heading">Store Locator</h3>
+             
+            <span class="place-heading"><h4 class="heading">Hyderabad</h4></span>
+            <ul class="places-list">
+              <li><a href="#">Vanasthalipuram</a></li>
+              <li><a href="#">Panama Godowns</a></li>
+              <li><a href="#">LBNagar</a></li>
+              
+            </ul>
+            
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="footer-store-locator-box">
+            <span class="small-heading">Get Social</span>
+            <h3 class="heading">Follow Us</h3>
+            <div class="fb-page margin-top-15" data-href="https://www.facebook.com/" data-height="150" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true" data-show-posts="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/"><a href="https://www.facebook.com/">Furniture</a></blockquote></div></div>
+            <br>
+            <div class="social-links-box">
+              <!-- Like us on Facebook &nbsp;<a href="#" class="social-link facebook"><span class="fa fa-facebook"></span></a>
+                <a href="#" class="social-link twitter"><span class="fa fa-twitter"></span></a>
+             <a href="#" class="social-link pinterest"><span class="fa fa-pinterest"></span></a>-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<br>
+<br>
+<br>
+<br>
+</nav>
+  </footer>
+<!--<div id="footer">
  <p style="font-family:serif;font-size=30px;color:white;text-align: center"><span class="glyphicon glyphicon-copyright-mark"></span>
  2016 Furniture.com | India.</p>
-</div>
+</div>-->
+
+<%@include file="footer.jsp" %>
+
 </body>
-
 </html>
-
-
